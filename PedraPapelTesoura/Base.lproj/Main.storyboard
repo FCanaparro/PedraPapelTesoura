@@ -99,20 +99,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6bg-ew-ngd">
-                                <rect key="frame" x="67" y="147" width="240" height="354"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6bg-ew-ngd">
+                                <rect key="frame" x="67" y="211.5" width="240" height="264"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARb-6d-DHj">
-                                <rect key="frame" x="41" y="552" width="294" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARb-6d-DHj">
+                                <rect key="frame" x="67" y="552" width="240" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mst-9h-kB3">
-                                <rect key="frame" x="123" y="629" width="130" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mst-9h-kB3">
+                                <rect key="frame" x="76" y="617" width="231" height="30"/>
                                 <state key="normal" title="Jogar novamente"/>
                                 <connections>
                                     <action selector="jogarNovamente:" destination="ER6-vb-XUn" eventType="touchUpInside" id="Spw-7J-har"/>
@@ -120,6 +117,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6bg-ew-ngd" firstAttribute="width" secondItem="3tp-ev-WvQ" secondAttribute="height" multiplier="240:667" id="0kg-Wi-nHl"/>
+                            <constraint firstItem="ARb-6d-DHj" firstAttribute="centerX" secondItem="0j8-ut-L2t" secondAttribute="centerX" id="I4H-Ai-4vW"/>
+                            <constraint firstItem="mst-9h-kB3" firstAttribute="centerX" secondItem="0j8-ut-L2t" secondAttribute="centerX" id="J1Q-RT-f56"/>
+                            <constraint firstItem="0j8-ut-L2t" firstAttribute="bottom" secondItem="ARb-6d-DHj" secondAttribute="bottom" constant="94" id="Swf-Rc-wvc"/>
+                            <constraint firstItem="0j8-ut-L2t" firstAttribute="bottom" secondItem="mst-9h-kB3" secondAttribute="bottom" constant="8" id="au7-IC-EEF"/>
+                            <constraint firstItem="6bg-ew-ngd" firstAttribute="centerX" secondItem="0j8-ut-L2t" secondAttribute="centerX" id="dwB-pg-Ntu"/>
+                            <constraint firstItem="0j8-ut-L2t" firstAttribute="bottom" secondItem="ARb-6d-DHj" secondAttribute="bottom" constant="94" id="ksq-Xb-jeF"/>
+                            <constraint firstItem="6bg-ew-ngd" firstAttribute="centerY" secondItem="0j8-ut-L2t" secondAttribute="centerY" id="sG9-7X-5P3"/>
+                            <constraint firstItem="mst-9h-kB3" firstAttribute="centerX" secondItem="0j8-ut-L2t" secondAttribute="centerX" id="w9h-G9-ALx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0j8-ut-L2t"/>
                     </view>
                     <connections>
