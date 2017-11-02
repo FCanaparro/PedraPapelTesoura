@@ -19,11 +19,39 @@ class ResultadoViewController: UIViewController {
         super.viewDidLoad()
         
         if escolhi==1{
-            resultadoLabel.text="Escolhi Pedra"
+            if resultado==2{
+                    resultadoLabel.text="papel enrola pedra, voce perdeu!"
+                    resultadoImagem.image=#imageLiteral(resourceName: "PaperCoversRock.jpg")
+            }else if resultado==3{
+                resultadoLabel.text="pedra quebra tesoura, voce ganhou!"
+                resultadoImagem.image=#imageLiteral(resourceName: "RockCrushesScissors.jpeg")
+            }else{
+                resultadoLabel.text="Empate!"
+                resultadoImagem.image=#imageLiteral(resourceName: "itsATie.png")
+            }
+    
         }else if escolhi==2{
-            resultadoLabel.text="Escolhi Papel"
+            if resultado==1{
+                resultadoLabel.text="papel enrola pedra, voce ganhou!"
+                resultadoImagem.image=#imageLiteral(resourceName: "PaperCoversRock.jpg")
+            }else if resultado==3{
+                resultadoLabel.text="tesoura corta papel, voce perdeu!"
+                resultadoImagem.image=#imageLiteral(resourceName: "ScissorsCutPaper.jpg")
+            }else{
+                resultadoLabel.text="Empate!"
+                resultadoImagem.image=#imageLiteral(resourceName: "itsATie.png")
+            }
         }else if escolhi==3{
-            resultadoLabel.text="Escolhi Tesoura"
+            if resultado==1{
+                resultadoLabel.text="Pedra quebra tesoura, voce perdeu!"
+                resultadoImagem.image=#imageLiteral(resourceName: "RockCrushesScissors.jpeg")
+            }else if resultado==2{
+                resultadoLabel.text="tesoura corta papel, voce ganhou!"
+                resultadoImagem.image=#imageLiteral(resourceName: "ScissorsCutPaper.jpg")
+            }else{
+                resultadoLabel.text="Empate!"
+                resultadoImagem.image=#imageLiteral(resourceName: "itsATie.png")
+            }
         }
         
         //unrwapp
