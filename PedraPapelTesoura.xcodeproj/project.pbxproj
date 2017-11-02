@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC350EA01FA3D7AC00F24C85 /* pedraVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC350E9F1FA3D7AC00F24C85 /* pedraVCViewController.swift */; };
-		DC350EA21FA3D7D700F24C85 /* tesouraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC350EA11FA3D7D700F24C85 /* tesouraViewController.swift */; };
-		DC350EA41FA3D80100F24C85 /* papelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC350EA31FA3D80100F24C85 /* papelViewController.swift */; };
+		DC067F541FAA6566002BD49A /* ResultadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC067F531FAA6566002BD49A /* ResultadoViewController.swift */; };
 		DC3D60C51FA2B56D00A46BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3D60C41FA2B56D00A46BEB /* AppDelegate.swift */; };
 		DC3D60C71FA2B56D00A46BEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3D60C61FA2B56D00A46BEB /* ViewController.swift */; };
 		DC3D60CA1FA2B56D00A46BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3D60C81FA2B56D00A46BEB /* Main.storyboard */; };
@@ -25,9 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC350E9F1FA3D7AC00F24C85 /* pedraVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pedraVCViewController.swift; sourceTree = "<group>"; };
-		DC350EA11FA3D7D700F24C85 /* tesouraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tesouraViewController.swift; sourceTree = "<group>"; };
-		DC350EA31FA3D80100F24C85 /* papelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = papelViewController.swift; sourceTree = "<group>"; };
+		DC067F531FAA6566002BD49A /* ResultadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadoViewController.swift; sourceTree = "<group>"; };
 		DC3D60C11FA2B56D00A46BEB /* PedraPapelTesoura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PedraPapelTesoura.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3D60C41FA2B56D00A46BEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC3D60C61FA2B56D00A46BEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,9 +73,7 @@
 				DC3D60C41FA2B56D00A46BEB /* AppDelegate.swift */,
 				DC3D60C61FA2B56D00A46BEB /* ViewController.swift */,
 				DC3D60C81FA2B56D00A46BEB /* Main.storyboard */,
-				DC350EA31FA3D80100F24C85 /* papelViewController.swift */,
-				DC350EA11FA3D7D700F24C85 /* tesouraViewController.swift */,
-				DC350E9F1FA3D7AC00F24C85 /* pedraVCViewController.swift */,
+				DC067F531FAA6566002BD49A /* ResultadoViewController.swift */,
 				DC3D60CB1FA2B56D00A46BEB /* Assets.xcassets */,
 				DC3D60DA1FA2B5C400A46BEB /* itsATie.png */,
 				DC3D60D61FA2B5C300A46BEB /* paper.png */,
@@ -173,11 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC350EA21FA3D7D700F24C85 /* tesouraViewController.swift in Sources */,
+				DC067F541FAA6566002BD49A /* ResultadoViewController.swift in Sources */,
 				DC3D60C71FA2B56D00A46BEB /* ViewController.swift in Sources */,
 				DC3D60C51FA2B56D00A46BEB /* AppDelegate.swift in Sources */,
-				DC350EA01FA3D7AC00F24C85 /* pedraVCViewController.swift in Sources */,
-				DC350EA41FA3D80100F24C85 /* papelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

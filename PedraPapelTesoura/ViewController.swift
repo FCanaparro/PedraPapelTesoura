@@ -14,27 +14,28 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    func escolhaAdversario() -> Int {
+            // Generate a random Int32 using arc4Random
+            let randomValue = 1 + arc4random() % 3
+            // Return a more convenient Int, initialized with the random value
+            return Int(randomValue)
+        }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "pedraVCViewController"{
-            let controller = segue.destination as! pedraVCViewController
+        let controller=segue.destination as! ResultadoViewController
+        controller.resultado = self.escolhaAdversario()
+        if segue.identifier=="escolhiPedra"{
+            controller.escolhi=1
         }
+        else if segue.identifier=="escolhiPapel"{
+            controller.escolhi=2
+        }
+        else if segue.identifier=="escolhiTesoura"{
+            controller.escolhi=3
+        }
+
     }
-        
-    
-    @IBAction func escolhiPapel(_ sender: Any) {
-    
-    let controller: papelViewController
-        controller = storyboard?.instantiateViewController(withIdentifier: "papelViewController") as! papelViewController
-   // controller.firstValue=randomDiceValue()
-    //controller.secondValue=randomDiceValue()
-    
-    present(controller, animated: true, completion:nil)
-    }
+
 }
 
