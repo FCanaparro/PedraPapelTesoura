@@ -5,6 +5,9 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,53 +20,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUE-4L-ZMA" userLabel="papelButton">
-                                <rect key="frame" x="56" y="90" width="74" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jUE-4L-ZMA" userLabel="papelButton">
+                                <rect key="frame" x="55" y="299" width="75" height="89"/>
                                 <state key="normal" image="paper.png"/>
                                 <connections>
+                                    <action selector="escolhiPapel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bc0-qs-Pt6"/>
                                     <segue destination="ER6-vb-XUn" kind="show" identifier="escolhiPapel" id="rJv-Au-Iwe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4W-0E-znw" userLabel="tesouraButton">
-                                <rect key="frame" x="140" y="102" width="95" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4W-0E-znw" userLabel="tesouraButton">
+                                <rect key="frame" x="138.5" y="310" width="96.5" height="67"/>
                                 <state key="normal" image="scissors.png"/>
                                 <connections>
                                     <segue destination="ER6-vb-XUn" kind="show" identifier="escolhiTesoura" id="JIx-Da-dtS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39i-aT-hrB" userLabel="pedraButton">
-                                <rect key="frame" x="245" y="102" width="87" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39i-aT-hrB" userLabel="pedraButton">
+                                <rect key="frame" x="245" y="310.5" width="88" height="66"/>
                                 <state key="normal" image="rock.png"/>
                                 <connections>
                                     <segue destination="ER6-vb-XUn" kind="show" identifier="escolhiPedra" id="OxL-EM-I56"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Papel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqT-hX-aTu">
-                                <rect key="frame" x="72" y="215" width="43" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Papel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqT-hX-aTu">
+                                <rect key="frame" x="71" y="384.5" width="43" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tesoura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsE-cd-sP7">
-                                <rect key="frame" x="157" y="215" width="61" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tesoura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsE-cd-sP7">
+                                <rect key="frame" x="157" y="385" width="61" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pedra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wkh-Dv-08p">
-                                <rect key="frame" x="266" y="215" width="45" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pedra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wkh-Dv-08p">
+                                <rect key="frame" x="266" y="384.5" width="45" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wkh-Dv-08p" firstAttribute="centerX" secondItem="39i-aT-hrB" secondAttribute="centerX" id="0CB-S2-cnh"/>
+                            <constraint firstItem="h4W-0E-znw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1LD-9Q-pmU"/>
+                            <constraint firstItem="h4W-0E-znw" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="3ck-4X-WSU"/>
+                            <constraint firstItem="TqT-hX-aTu" firstAttribute="centerX" secondItem="jUE-4L-ZMA" secondAttribute="centerX" id="74A-Dg-hyJ"/>
+                            <constraint firstItem="bsE-cd-sP7" firstAttribute="top" secondItem="h4W-0E-znw" secondAttribute="bottom" constant="8" id="9eZ-rM-THC"/>
+                            <constraint firstItem="39i-aT-hrB" firstAttribute="leading" secondItem="h4W-0E-znw" secondAttribute="trailing" constant="10" id="EvH-i9-5jk"/>
+                            <constraint firstItem="bsE-cd-sP7" firstAttribute="firstBaseline" secondItem="h4W-0E-znw" secondAttribute="baseline" constant="24.5" symbolType="layoutAnchor" id="LdH-z1-E9y"/>
+                            <constraint firstItem="TqT-hX-aTu" firstAttribute="width" secondItem="jUE-4L-ZMA" secondAttribute="height" multiplier="43:89" id="MgO-aj-qzL"/>
+                            <constraint firstItem="TqT-hX-aTu" firstAttribute="top" secondItem="jUE-4L-ZMA" secondAttribute="bottom" constant="-3.5" id="Wuz-Nz-Mjb"/>
+                            <constraint firstItem="Wkh-Dv-08p" firstAttribute="width" secondItem="39i-aT-hrB" secondAttribute="height" multiplier="15:22" id="aa0-N7-Se7"/>
+                            <constraint firstItem="39i-aT-hrB" firstAttribute="width" secondItem="h4W-0E-znw" secondAttribute="height" multiplier="29:22" id="abI-1T-m9d"/>
+                            <constraint firstItem="jUE-4L-ZMA" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="baw-Yn-1IL"/>
+                            <constraint firstItem="39i-aT-hrB" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="c0C-7d-4Ro"/>
+                            <constraint firstItem="Wkh-Dv-08p" firstAttribute="top" secondItem="39i-aT-hrB" secondAttribute="bottom" constant="8" id="d19-tb-Lbb"/>
+                            <constraint firstItem="bsE-cd-sP7" firstAttribute="width" secondItem="h4W-0E-znw" secondAttribute="height" multiplier="61:66" id="icx-L4-TGv"/>
+                            <constraint firstItem="h4W-0E-znw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="96:667" id="kbp-63-uR5"/>
+                            <constraint firstItem="h4W-0E-znw" firstAttribute="leading" secondItem="jUE-4L-ZMA" secondAttribute="trailing" constant="8.5" id="nwS-gp-sC8"/>
+                            <constraint firstItem="Wkh-Dv-08p" firstAttribute="firstBaseline" secondItem="39i-aT-hrB" secondAttribute="baseline" constant="24.5" symbolType="layoutAnchor" id="o64-Mx-Ds7"/>
+                            <constraint firstItem="jUE-4L-ZMA" firstAttribute="width" secondItem="h4W-0E-znw" secondAttribute="height" multiplier="37:33" id="sgr-9i-Q51"/>
+                            <constraint firstItem="bsE-cd-sP7" firstAttribute="centerX" secondItem="h4W-0E-znw" secondAttribute="centerX" id="yAU-qp-SUA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
